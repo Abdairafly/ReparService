@@ -39,9 +39,29 @@
 
         <form method="post" action="http://reparservices/app/model/traitement_client.php">
             <div class="form-group">
-                <h3>Informations Client :</h3>
-                <!-- ... Vos champs client ... -->
-            </div>
+            <h3>Informations Client :</h3>
+            
+            <label for="clientNom">Nom :</label>
+            <input type="text" class="form-control" id="clientNom" name="clientNom" placeholder="Nom du client" required>
+            
+            <label for="clientPrenom" class="mt-2">Prénom :</label>
+            <input type="text" class="form-control" id="clientPrenom" name="clientPrenom" placeholder="Prénom du client" required>
+        </div>
+        
+        <div class="form-group">
+    <h3>Avez-vous déjà un numéro de devis ?</h3>
+    <div class="input-group">
+        <input type="text" class="form-control" id="numeroDevis" name="numeroDevis" placeholder="Entrez votre numéro de devis">
+        <div class="input-group-append">
+            <button id="checkDevis" class="btn btn-outline-secondary" type="button">Vérifier</button>
+        </div>
+    </div>
+    <small class="form-text text-muted">Si vous avez déjà un numéro de devis, entrez-le pour télécharger les détails.</small>
+</div>
+
+        <!-- ... autres champs ... -->
+
+            
 
             <div class="form-group">
                 <h3>Type de service :</h3>
